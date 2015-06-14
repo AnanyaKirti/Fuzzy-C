@@ -12,6 +12,7 @@ import copy
 import math
 import random
 import time
+import sys
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import decimal
@@ -253,7 +254,7 @@ def fuzzy(data, cluster_number, m = 2 ):
 if __name__ == '__main__':
 	
 	# import the data
-	data = import_data("dim2.txt")
+	data = import_data(str(sys.argv[1]))
 	#data, cluster_location = import_data_format_iris("iris.txt")
 	#print_matrix(data)
 	#data , order = randomise_data(data)
